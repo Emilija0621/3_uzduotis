@@ -440,6 +440,24 @@ Grąžina rezultatą: <br>
 
 <img width="203" height="38" alt="image" src="https://github.com/user-attachments/assets/9c7c08ed-5548-43d9-80e4-90be8b82c8b5" />
 
+## v3.0
+
+Sukurta ProgramInstallSetup.msi / setup.exe instaliavimo sistema, sukurta per „Visual Studio Installer Projects“.
+
+Instaliatorius susideda iš dviejų failų:<br>
+
+setup.exe – paleidimo failas
+ProgramInstallSetup.msi – pagrindinis diegimo paketas 
+
+#### DLL 
+Projekte taip pat sukurtas ir naudojamas atskiras Class Library (DLL) modulis.
+DLL pateiktas kartu su programa ir automatiškai instaliuojamas.
+
+### Diegimo instrukcija
+- Parsisiųskite abu failus: setup.exe ir ProgramInstallSetup.msi
+- Paleiskite setup.exe (jis automatiškai suras .msi)
+- Pasirinkite „Install“
+- Paleiskite programą iš darbalaukio ar Start meniu
 
 
 
