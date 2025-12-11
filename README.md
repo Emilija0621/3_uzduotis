@@ -4,50 +4,37 @@
 
 ### Reikalavimai:
 
-- C++ kompiliatorius (pvz., g++ 10+ arba Apple Clang 17+ su C++20 palaikymu)
-- CMake – projekto generavimo įrankis
-- make – kompiliavimo ir vykdomojo failo generavimo įrankis
+- Visual Studio 2022 su Desktop development with C++
+- CMake 3.16+
 
 ### Paleidimo žingsniai:
 
 1. Atsisiųsti programos failus ir CMakeLists.txt
 2. Viską sudėti į aplanką "Studentai", Studentai aplanke turi būti:
-- Aplankas "Include" su visais header failais (pavadinimas.h)
-- Aplankas "src" su visais source failais (pavadinimas.cpp)
+- visi header (pavadinimas.h) ir source (pavadinimas.cpp) failai
 - CMakeLists.txt
+- runme.bat
 
-3. Atidaryti komandinę eilutę (terminalą) ir pereiti į projekto aplanką, pvz.:
-- cd ~/Desktop/Studentai   (Unix / macOS / Linux)
-- cd C:\Users\Vartotojas\Desktop\Studentai  (Windows)
+2. Paleisti runme.bat (du kartus paspaudus arba per komandine eilute)
 
-4. Sukurti buid aplanką ir sukompiliuoti projektą: 
-- mkdir build  
-- cd build 
-- cmake .. 
-- make   (Unix / Linux / macOS, Windows su make palaikymu) 
+Failas runme.bat padaro viską automatiškai ir paleidžia studentai.exe
 
-5. Paleisti programą:
-- ./Studentai   (Unix / macOS / Linux)
-- Studentai.exe  (Windows)
+Komandinės eilutės paleidimo alternatyva:
 
-### Analogiškai galima naudoti runme.sh (Unix / macOS / Linux)
+- cd C:\Kelias\Iki\Studentai
+- runme.bat
 
-1. Atsisiųsti programos failus, CMakeLists.txt ir runme.sh
-  
-2. Viską sudėti į aplanką "Studentai", Studentai aplanke turi būti:
-- Aplankas "Include" su visais header failais (pavadinimas.h)
-- Aplankas "src" su visais source failais (pavadinimas.cpp)
-- CMakeLists.txt
-- runme.sh
+### Galima paleisti programą be runme.bat failo:
 
-3. Atidaryti komandinę eilutę (terminalą) ir pereiti į projekto aplanką, pvz.:
-- cd ~/Desktop/Studentai 
+Darbas su komandine eilute:
 
-4. Įsitikinti, kad failas yra vykdomas:
-- chmod +x runme.sh
-
-5. Paleisti programą:
-- ./runme.sh
+- cd C:\Kelias\Iki\Studentai
+- mkdir build
+- cd build
+- cmake .. -G "Visual Studio 17 2022" -A x64
+- cmake --build . --config Release
+- cd bin\Release
+- studentai.exe
 
 
 ## Trumpas projekto aprašymas:
