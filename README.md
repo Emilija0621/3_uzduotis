@@ -442,15 +442,16 @@ Grąžina rezultatą: <br>
 
 ## v3.0
 
-Sukurta ProgramInstallSetup.msi / setup.exe instaliavimo sistema, sukurta per „Visual Studio Installer Projects“.
+Sukurta **ProgramInstallSetup.msi / setup.exe** instaliavimo sistema. <br>
+Sukurta per „Visual Studio Installer Projects“.
 
 Instaliatorius susideda iš dviejų failų:<br>
 
-setup.exe – paleidimo failas
+setup.exe – paleidimo failas<br>
 ProgramInstallSetup.msi – pagrindinis diegimo paketas 
 
 #### DLL 
-Projekte taip pat sukurtas ir naudojamas atskiras Class Library (DLL) modulis.
+Projekte taip pat sukurtas ir naudojamas atskiras Class Library (DLL) modulis.<br>
 DLL pateiktas kartu su programa ir automatiškai instaliuojamas.
 
 ### Diegimo instrukcija
@@ -458,8 +459,22 @@ DLL pateiktas kartu su programa ir automatiškai instaliuojamas.
 - Paleiskite setup.exe (jis automatiškai suras .msi)
 - Pasirinkite „Install“
 - Paleiskite programą iš darbalaukio ar Start meniu
+  
+<img width="496" height="400" alt="image" src="https://github.com/user-attachments/assets/42cf09b7-523a-44d3-8b94-4b9c89861935" />
 
 
+### Programos išdiegimas per setup
+- Atidarykite Setup.exe dar kartą
+- Pasirinkite Remove / Uninstall (MSI diegimo vedlyje)
+- Sekite instrukcijas, programa bus pilnai pašalinta:
+visi programos failai Program Files aplanke <br>
+DLL failai, jei buvo instaliuoti<br>
+darbalaukio ir Start meniu nuorodos<br>
+
+<img width="496" height="400" alt="image" src="https://github.com/user-attachments/assets/3aed6a0a-4d6b-49c5-9918-71c8bf2e4ddc" /> <br>
+
+
+Taip pat programą galima ištrinti per Control Panel → Programs and Features, jei reikia alternatyvos.
 
 
 
